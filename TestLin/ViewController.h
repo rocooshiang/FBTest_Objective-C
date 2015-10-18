@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate,FBSDKLoginButtonDelegate>
+- (IBAction)cameraBtn:(id)sender;
+- (IBAction)shareBtn:(id)sender;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
+@property (strong, nonatomic) IBOutlet UILabel *userName;
+@property (strong, nonatomic) IBOutlet FBSDKLoginButton *loginBtn;
+- (IBAction)customLoginBtn:(id)sender;
 
 @end
 
