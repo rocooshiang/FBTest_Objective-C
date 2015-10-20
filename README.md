@@ -1,3 +1,9 @@
 # FBTest_Objective-C
 
-Facebook login ,  post picture and script
+Features
+
+Facebook login ,  post picture and script.
+
+Reference
+
+Use AFNetworking and MBProgressHUD.
