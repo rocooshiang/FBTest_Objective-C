@@ -1,9 +1,16 @@
-# FBTest_Objective-C
+# FBTest_Objective-C 
 
-Features:
+Feature :
+------------
+1. Custom login button and Default login button.
+2. Fetch user name and picture.
+3. Take a picture and share to Facebook with script without default dialog.
 
-        Facebook login ,  post picture and script.
+Screenshot :
+------------
 
-Reference:
+![Xcode indent settings](Screenshot/Facebook1.jpg)
 
-        Use AFNetworking and MBProgressHUD.
+Reference :
+------------
+[Facebook Graph API](https://developers.facebook.com/docs/graph-api)
