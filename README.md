@@ -1,4 +1,4 @@
-# FBTest_Objective-C 
+# FacebookTest
 
 Feature :
 ------------
