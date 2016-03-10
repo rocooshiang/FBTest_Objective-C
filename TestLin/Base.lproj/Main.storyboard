@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -58,6 +58,9 @@
                                     <action selector="customLoginBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ln4-Ku-IZS"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iVk-4f-Qzx">
+                                <rect key="frame" x="41" y="80" width="50" height="50"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -65,6 +68,7 @@
                     <connections>
                         <outlet property="imageView" destination="dAr-IO-Ern" id="uSZ-U5-ZST"/>
                         <outlet property="loginBtn" destination="D5z-DU-XY4" id="0Tp-Cc-F6i"/>
+                        <outlet property="userImage" destination="iVk-4f-Qzx" id="9HB-N5-y3y"/>
                         <outlet property="userName" destination="ekR-rv-P5V" id="KgN-vv-rF0"/>
                     </connections>
                 </viewController>

@@ -13,6 +13,7 @@
 - (IBAction)cameraBtn:(id)sender;
 - (IBAction)shareBtn:(id)sender;
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property (strong, nonatomic) IBOutlet UIImageView *userImage;
 
 @property (strong, nonatomic) IBOutlet UILabel *userName;
 @property (strong, nonatomic) IBOutlet FBSDKLoginButton *loginBtn;
