@@ -32,6 +32,9 @@ NSDictionary *getUserInfoParameter;
   //picture.width(100).height(100) 可是取得寬高100的照片
   getUserInfoParameter = @{@"fields": @"id, name , email , picture.width(100).height(100)"};
   
+  _describe.returnKeyType = UIReturnKeyDone;
+  _describe.delegate = self;
+  
 }
 
 - (void)didReceiveMemoryWarning {
@@ -80,7 +83,7 @@ NSDictionary *getUserInfoParameter;
     if(!_imageView.isHidden){
       [Global startProgressHUD:self.view andMessage:@"上傳中..."];
       NSMutableDictionary* params = [[NSMutableDictionary alloc] init];
-      [params setObject:@"FB測試上傳照片&文字" forKey:@"message"];
+      [params setObject:_describe.text forKey:@"message"];
       [params setObject:UIImagePNGRepresentation(_imageView.image) forKey:@"picture"];
       
       FBSDKGraphRequest *request = [[FBSDKGraphRequest alloc]
@@ -136,6 +139,7 @@ NSDictionary *getUserInfoParameter;
 
 -(void)loginButtonDidLogOut:(FBSDKLoginButton *)loginButton{
   _userName.text = @"未登入";
+  _userImage.image = [UIImage imageNamed:@"white"];
 }
 
 - (IBAction)customLoginBtn:(id)sender {

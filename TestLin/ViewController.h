@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import "BaseTextField.h"
 
-@interface ViewController : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate,FBSDKLoginButtonDelegate>
+@interface ViewController : BaseTextField<UIImagePickerControllerDelegate, UINavigationControllerDelegate,FBSDKLoginButtonDelegate>
 - (IBAction)cameraBtn:(id)sender;
 - (IBAction)shareBtn:(id)sender;
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
@@ -18,6 +19,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *userName;
 @property (strong, nonatomic) IBOutlet FBSDKLoginButton *loginBtn;
 - (IBAction)customLoginBtn:(id)sender;
+@property (strong, nonatomic) IBOutlet UITextField *describe;
 
 @end
 
